@@ -1,1 +1,0 @@
-var zoom1=new ch.Zoom(ch("#zoom-default")[0]),carousel=new ch.Carousel(ch(".demo-carousel")[0],{pagination:!1}),dropdown1=new ch.Dropdown(document.querySelector(".demo-dropdown1")),dropdown2=new ch.Dropdown(document.querySelector(".demo-dropdown2"),{shortcuts:!1}),tabs=new ch.Tabs(ch(".demo-tabs")[0]);
