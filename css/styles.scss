@@ -1,0 +1,73 @@
+////
+// Styles.scss
+// Global style of the page. Specifies basic css 
+//
+
+@import 'variables.scss';
+
+body {
+	background-color:$gray;
+}
+
+h1 {
+	line-height: 1.2em;
+}
+
+label {
+	display: inline-block;
+	width: 60px;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+.spaced {
+	padding: $def-sep-size;
+}
+
+.large {
+	width: $def-lg-width;
+}
+
+.medium {
+	width: $def-md-width;
+}
+
+.flex {
+	display: flex;
+}
+
+.separate {
+    border-bottom: solid;
+    border-bottom-width: thin;
+}
+
+.sz--little {
+    font-size: $def-sm-font;
+}
+
+.sz--large {
+	font-size: $def-lg-font;
+}
+
+.ch-carousel img {
+	width: $def-img-size;
+	height: $def-img-size;
+}
+
+.green {
+	color: $green;
+}
+
+.blue {
+	color: $blue;
+}
+
+.mg--bot {
+    margin-bottom: $def-sep-size
+}
+
+.mg--top {
+	margin-top: $def-sep-size;
+}
