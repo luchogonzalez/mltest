@@ -11,25 +11,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="large spaced centered">
+    <div class="large spaced centered" itemscope itemtype="https://schema.org/Product">
         <header>
-            <h1 class="sz--large mg--bot">Ipad Mini Apple 16 Gb Wifi Led 7.9</h1>
+            <h1 class="sz--large mg--bot"><span itemprop="name">Ipad Mini <span itemprop="brand">Apple</span> 16 Gb Wifi Led 7.9</span></h1>
         </header>
         <section class="flex separate">
             <article class="medium">
                 <a id="zoom-default" class="zoom" href="img/main_big.jpg" target="_blank">
-                    <img src="img/main.jpg" alt="ipadMiniApple" />
-                    <img src="img/main.jpg" alt="ipadMiniApple">
+                    <img itemprop="image" src="img/main.jpg" alt="ipadMiniApple" />
                 </a>
             </article>
             <article class="medium">
-                <article class="ch-price sz--large mg--top">
-                    <strong>$ 4799<sup>99</sup></strong>
-                </article>            
+                <span class="ch-price sz--large mg--top" itemprop="priceCurrency" content="ARS"><strong>$</strong></span><span class="ch-price sz--large mg--top" itemprop="price"><strong> 4799<sup>99</sup></strong></span>
                 <form>
                     <div class="mg--top">
-                        <label>Quantity</label>
-                        <h3 class="demo-dropdown1 ch-shownby-pointertap ch-dropdown-trigger">1</h3>
+                        <label id="qt">Quantity</label>
+                        <h3 class="demo-dropdown1 ch-shownby-pointertap ch-dropdown-trigger" aria-labelledby="qt">1</h3>
                         <menu label="Links" class="ch-hide">
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
@@ -37,8 +34,8 @@
                         </menu>
                     </div>
                     <div class="mg--bot">
-                        <label>Payments</label>
-                        <h3 class="demo-dropdown2 ch-shownby-pointertap ch-dropdown-trigger">1</h3>
+                        <label id="pay">Payments</label>
+                        <h3 class="demo-dropdown2 ch-shownby-pointertap ch-dropdown-trigger" aria-labelledby="pay">1</h3>
                         <menu label="Links" class="ch-hide">
                             <li><a href="#">3</a></li>
                             <li><a href="#">6</a></li>
@@ -61,34 +58,34 @@
                 </div>
             </article>
         </section>
-
-        <div class="tabs">
-            <div class="tab">
-                <input type="radio" id="tab-1" name="tab-group-1">
+        <div class="tabs" role="tablist">
+            <div class="tab" role="presentation">
+                <input type="radio" id="tab-1" name="tab-group-1" role="tab" aria-selected="false">
                 <label for="tab-1">Product Description</label> 
-                <div class="content">
-                    <p>I'm selling IPad mini wifi 16Gb in white, brought from the USA in great conditions.</p>
-                    <p>It has two small scratches: one in top border and the other one on left bottom border</p>
-                    <p>Original box and charger.</p>
-                    <p>MercadoPago & MercadoEnvios accepted.</p>
+                <div class="content" role="tabpanel" aria-hidden="true">
+                    <span itemprop="description">
+                        <p>I'm selling IPad mini wifi 16Gb in white, brought from the USA in great conditions.</p>
+                        <p>It has two small scratches: one in top border and the other one on left bottom border</p>
+                        <p>Original box and charger.</p>
+                        <p>MercadoPago & MercadoEnvios accepted.</p>
+                    </span>
                 </div> 
             </div>
-            <div class="tab">
-                <input type="radio" id="tab-2" name="tab-group-1" checked>
+            <div class="tab" role="presentation">
+                <input type="radio" id="tab-2" name="tab-group-1" checked role="tab" aria-selected="true">
                 <label for="tab-2">Questions</label>
-                <div class="content">
-                    <p><span class="blue">Buyer</span></p>
+                <div class="content" role="tabpanel">
+                    <p class="blue">Buyer</p>
                     <div class="ch-box-info">
                         <p>Do you have this one in black?</p>
                     </div>
-                    <p><span class="green">Seller</span></p>
+                    <p class="green">Seller</p>
                     <div class="ch-box-ok">
                        <p>No I don't, I only have white</p>
                     </div> 
                 </div> 
             </div>
         </div>
-
     </div>
 
     <script src="https://ui.mlstatic.com/chico/tiny/0.2.3/tiny.min.js"></script>
